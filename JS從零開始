@@ -135,3 +135,6 @@ function myFunction() {
 可以將script存在其他檔案中
 並用<script src="myScript.js"></script>include近來
 。
+
+
+寫到javaScript語法
