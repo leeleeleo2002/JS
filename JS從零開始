@@ -1,0 +1,137 @@
+************************************************************************************************
+我的第一支JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>我的第一段 JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">   
+点击这里来显示日期和时间
+</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
+----------------------------------------------------------------------------------------------
+ document當頁面讀取完成
+ getElementById('demo')選取id為demo的元素
+ innerHTML將自串加入此元素中
+ ----------------------------------------------------------------------------------------------
+************************************************************************************************
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript能做甚麼</h2>
+
+<p id="demo">JavaScript能改變HTML的內容</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello World!'"/>
+點擊已改變id為demo的p標籤內容
+
+
+</body>
+</html>
+*************************************************************************************************
+-------------------------------------------------------------------------------------------------
+<html>
+<body>
+
+<h2>JavaScript能做甚麼？</h2>
+
+<p>JavaScript 能夠改變HTML的屬性。</p>
+
+<p>JavaScript 改變了src的屬性值</p>
+
+<button onclick="document.getElementById('myImage').src='/i/eg_bulbon.gif'">开灯</button>
+
+<img id="myImage" border="0" src="/i/eg_bulboff.gif" style="text-align:center;">
+
+<button onclick="document.getElementById('myImage').src='/i/eg_bulboff.gif'">关灯</button>
+
+</body>
+</html>
+-------------------------------------------------------------------------------------------------
+*************************************************************************************************
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript能做甚麼</h2>
+
+<p id="demo">JavaScript 能够改变 HTML 元素的样式。</p>
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">
+點擊改變id為demo的style font-size
+</button>
+
+
+</body>
+</html> 
+************************************************************************************************
+
+
+
+更改css屬性:顯示及隱藏
+------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript 能夠做甚麼</h2>
+
+<p>JavaScript 能够顯示或隱藏 HTML 元素。</p>
+
+<p id="demo" style="display:none">Hello JavaScript!</p>
+
+
+<button onclick="getElementById('demo').style.display='block'">
+點擊我可以顯示
+</button>
+
+<button onclick="getElementById('demo').style.display='none'">
+點擊我可以隱藏
+</button>
+</body>
+</html>
+------------------------------------------------------------------------------------------------
+基本觀念:在HTML中，JavaScript代碼必須在<script></script>之間
+************************************************************************************************
+
+
+設置方法將script放置在其中
+------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "段落已被更改。";
+}
+</script>
+</head>
+
+<body>
+
+<h2>Head中的javascript</h2>
+
+<p id="demo">一个段落。</p>
+
+<button type="button" onclick="myFunction()">试一试</button>
+
+</body>
+</html>
+------------------------------------------------------------------------------------------------
+也可以將js寫在body中
+好處是
+把脚本置于 <body> 元素的底部，可改善顯示速度，因为腳本編譯會拖慢顯示
+**************************************************************************************************
+
+
+可以將script存在其他檔案中
+並用<script src="myScript.js"></script>include近來
+。
