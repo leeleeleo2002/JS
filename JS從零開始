@@ -136,5 +136,21 @@ function myFunction() {
 並用<script src="myScript.js"></script>include近來
 。
 
+js為一連串的字符串，由web瀏覽器執行
 
-寫到javaScript語法
+js儲存變量
+利用var做宣告
+var x = 7;
+
+可使用typeof 查詢類別
+-----------------------------------------------------
+typeof ""                  // 返回 "string"
+typeof "Bill"              // 返回 "string"
+typeof "Bill Gates"        // 返回 "string"
+-----------------------------------------------------
+var person;                // 值是 undefined，類型是 undefined
+var person = null;         // 值是 null，但是類型仍然是對象
+-----------------------------------------------------------
+null === undefined            // false
+null == undefined             // true
+
