@@ -1,0 +1,6 @@
+onchange	HTML 元素已被改變
+onclick	用户點擊了 HTML 元素
+onmouseover	用户把滑鼠移動到 HTML 元素上
+onmouseout	用户把滑鼠移開 HTML 元素
+onkeydown	用户按下键盤按键
+onload	瀏覽器已经完成頁面加载
